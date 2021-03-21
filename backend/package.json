@@ -9,7 +9,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "dotenv": "^8.2.0",
     "find-config": "^1.0.0",
@@ -22,7 +21,7 @@
     "strapi-plugin-content-manager": "3.5.3",
     "strapi-plugin-content-type-builder": "3.5.3",
     "strapi-plugin-email": "3.5.3",
-    "strapi-plugin-graphql": "3.2.5",
+    "strapi-plugin-graphql": "^3.5.3",
     "strapi-plugin-upload": "3.5.3",
     "strapi-plugin-users-permissions": "3.5.3",
     "strapi-utils": "3.5.3"

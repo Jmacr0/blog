@@ -10,7 +10,7 @@ const {
   articles,
   global
 } = require("../../data/data.json");
-require('dotenv').config();
+
 async function isFirstRun() {
   const pluginStore = strapi.store({
     environment: strapi.config.environment,
@@ -154,6 +154,8 @@ async function importSeedData() {
   await importArticles();
   await importGlobal();
 }
+
+require('dotenv').config({ path: require('find-config')('.env') });
 
 module.exports = async () => {
   const shouldImportSeedData = await isFirstRun();
